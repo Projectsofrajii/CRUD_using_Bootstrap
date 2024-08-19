@@ -5,9 +5,9 @@ from django.db import models
 class Order(models.Model):
     order =models.CharField(max_length=30)
     customers =models.CharField(max_length=30)
-    total_orders =models.IntegerField(max_length=30)
-    delivered =models.IntegerField(max_length=30)
-    pending =models.IntegerField(max_length=30)
+    total_orders =models.IntegerField()
+    delivered =models.IntegerField()
+    pending =models.IntegerField()
 
 class Product():
     pass
